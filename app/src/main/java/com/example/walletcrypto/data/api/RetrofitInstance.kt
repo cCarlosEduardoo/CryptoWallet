@@ -10,5 +10,6 @@ object RetrofitInstance {
             .addConverterFactory(GsonConverterFactory.create())
             .build()
             .create(CoinGeckoApiService::class.java)
+
     }
 }

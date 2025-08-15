@@ -10,5 +10,4 @@ interface CoinGeckoApiService {
      @Query( "ids") ids: String,
      @Query("vs_currencies") vsCurrencies: String
     ): Map<String,CryptoPriceResponse>
-
 }
