@@ -11,12 +11,20 @@ import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
+import com.example.walletcrypto.data.api.db.AppDataBase
 import com.example.walletcrypto.ui.theme.WalletCryptoTheme
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
+
+        val db = AppDataBase.g
+
+
+
+
+
         setContent {
             WalletCryptoTheme {
                 Scaffold(modifier = Modifier.fillMaxSize()) { innerPadding ->
