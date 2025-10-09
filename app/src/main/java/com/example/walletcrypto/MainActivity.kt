@@ -17,9 +17,10 @@ import com.example.walletcrypto.ui.theme.WalletCryptoTheme
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
+        setContentView(R.layout.activity_main)
         enableEdgeToEdge()
 
-        val db = AppDataBase.g
+        //val db = AppDataBase.g
 
 
 
