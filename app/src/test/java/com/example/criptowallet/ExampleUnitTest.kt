@@ -1,4 +1,4 @@
-package com.example.walletcrypto
+package com.example.criptowallet
 
 import org.junit.Test
 
