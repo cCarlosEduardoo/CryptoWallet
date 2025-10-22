@@ -1,0 +1,48 @@
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="6dp"
+    app:strokeWidth="1dp"
+    app:strokeColor="#E0E0E0"
+    android:backgroundTint="@android:color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/txtName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bitcoin (BTC)"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#222222"/>
+
+        <TextView
+            android:id="@+id/txtPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="$62,000.00"
+            android:textSize="16sp"
+            android:textColor="#4CAF50"
+            android:layout_marginTop="4dp"/>
+
+        <TextView
+            android:id="@+id/txtChange"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+2.34%"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginTop="2dp"
+            android:textColor="#4CAF50"/>
+
+    </LinearLayout>
+</com.google.android.material.card.MaterialCardView>

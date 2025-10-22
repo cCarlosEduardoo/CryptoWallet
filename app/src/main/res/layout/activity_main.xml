@@ -1,17 +1,33 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="vertical"
-    android:padding="16dp"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
 
-    <Button
-        android:id="@+id/btnWallet"
-        android:text="Ver Carteira"
+    <TextView
+        android:id="@+id/labelMain"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Cripto Tempo Real"
+        android:textAlignment="center"
+        android:textSize="34sp"
+        android:textStyle="bold" />
 
     <ListView
         android:id="@+id/listCryptos"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="686dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="84dp" />
+
+    <Button
+        android:id="@+id/btnWallet"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sua Carteira"
+        android:textSize="24sp" />
+
 </LinearLayout>

@@ -28,11 +28,7 @@ class MainActivity : AppCompatActivity() {
 
         lifecycleScope.launch {
             val cryptos = CryptoController.getTopCryptos()
-            val adapter = ArrayAdapter(
-                this@MainActivity,
-                android.R.layout.simple_list_item_1,
-                cryptos.map { "${it.name} - $${it.price_usd}" }
-            )
+            val adapter = CryptoAdapter(this@MainActivity, cryptos)
             listView.adapter = adapter
 
             listView.setOnItemClickListener { _, _, position, _ ->
